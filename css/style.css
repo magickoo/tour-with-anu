@@ -10,7 +10,12 @@ h5,
 h6 {
   font-family: "Montserrat", sans-serif;
 }
-
+.about-me {
+  text-align: justify;
+}
+.highlight {
+  color: #E96F85;
+}
 p {
   font-family: "Nunito", sans-serif;
   font-size: 20px;
@@ -239,6 +244,40 @@ header {
   font-size: 20px;
   margin: 10px;
 }
+/* CSS for image gallery */
+.image-gallery {
+  padding: 40px 0;
+  text-align: center;
+}
+/* CSS for image gallery */
+.image-gallery {
+  padding: 40px 0;
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 -15px; /* Adjust for gap between images */
+}
+.gallery li {
+  flex: 0 0 calc(33.33% - 30px); /* Adjust for gap between images */
+  margin: 15px; /* Adjust for gap between images */
+  box-sizing: border-box;
+}
+.gallery img {
+  width: 100%;
+  
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+.gallery img:hover {
+  transform: scale(1.1);
+}
+
 
 /* Service */
 
@@ -322,6 +361,48 @@ footer .r-icon a:hover {
   color: #eee;
   transition: 0.5s all;
 }
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.feedback-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.form-group textarea {
+  height: 100px;
+}
+.form-group button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.form-group button:hover {
+  background-color: #0056b3;
+}
 /* Media-------------------------------------------------------------------------------- */
 @media (min-width: 200px) and (max-width: 768px) {
   .r-nav {
@@ -356,4 +437,6 @@ footer .r-icon a:hover {
     background-size: cover;
     background-position: -700px 0;
   }
+
+  
 }
